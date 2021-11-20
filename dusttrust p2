@@ -1,0 +1,149 @@
+game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Chat, true)
+game.Players.LocalPlayer.PlayerGui.CharacterSelection.Character.Value = "Sans"
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:Destroy()
+wait(1)
+game.Players.LocalPlayer.Character.Head.HealthBar.Frame.Script:Destroy()
+game.Players.LocalPlayer.Character.Head.HealthBar.Frame.StaminaBar:Destroy()
+game.Players.LocalPlayer.Character.Head.HealthBar.Frame.PName:Destroy()
+ 
+
+wait(1)
+local pass = getrenv()._G.Pass  
+         game.Players.LocalPlayer:WaitForChild("StarterPlaylist")
+game.Players.LocalPlayer.StarterPlaylist["1Megalovania"]:Destroy()
+local Sound = Instance.new("Sound")
+Sound.Parent = game.Players.LocalPlayer.StarterPlaylist
+Sound.Volume = 2
+Sound.Playing = true
+Sound.Looped = true
+Sound.SoundId = "rbxassetid://8001367987"
+Sound.Name = "1Megalovania"
+	local A_1 =  {
+	[1] = pass, 
+	[2] = "Chatted", 
+	[3] = "Ok", 
+	[4] = Color3.fromRGB(255, 255, 255)
+}
+local Event = game:GetService("ReplicatedStorage").Remotes.Events
+Event:FireServer(A_1)
+wait(2)
+	local A_1 =  {
+	[1] = pass, 
+	[2] = "Chatted", 
+	[3] = "Thats Enough.", 
+	[4] = Color3.fromRGB(255, 255, 255)
+}
+local Event = game:GetService("ReplicatedStorage").Remotes.Events
+Event:FireServer(A_1)
+wait(2)
+	local A_1 =  {
+	[1] = pass, 
+	[2] = "Chatted", 
+	[3] = "I cant stop you after all...", 
+	[4] = Color3.fromRGB(255, 255, 255)
+}
+local Event = game:GetService("ReplicatedStorage").Remotes.Events
+Event:FireServer(A_1)
+wait(2)
+	local A_1 =  {
+	[1] = pass, 
+	[2] = "Chatted", 
+	[3] = "So instead of trying to stop you...", 
+	[4] = Color3.fromRGB(255, 255, 255)
+}
+local Event = game:GetService("ReplicatedStorage").Remotes.Events
+Event:FireServer(A_1)
+wait(6)
+	local A_1 =  {
+	[1] = pass, 
+	[2] = "Chatted", 
+	[3] = "I will drag you down to the hell!", 
+	[4] = Color3.fromRGB(255, 0, 0)
+}
+local Event = game:GetService("ReplicatedStorage").Remotes.Events
+Event:FireServer(A_1)
+local A_1 =  {
+	[1] = pass, 
+	[2] = "SpawnBone", 
+	[3] = true
+}
+local Event = game:GetService("ReplicatedStorage").Remotes.SansMoves
+Event:InvokeServer(A_1)
+wait(2)
+-- Get a reference to an existing object
+    local original = game:GetService("Workspace")[game.Players.LocalPlayer.Name].Bone
+    -- Create the model copy
+    local copy = original:Clone()
+    -- Parent the copy to the same parent as the original
+
+    copy.Parent = original.Parent
+    -- Move the copy so it's not overlapping the original
+
+
+    local original = game:GetService("Workspace")[game.Players.LocalPlayer.Name].Bone
+
+    local copy = original:Clone()
+
+
+    copy.Parent = original.Parent
+ 
+
+
+    local original = game:GetService("Workspace")[game.Players.LocalPlayer.Name].Bone
+ 
+    local copy = original:Clone()
+
+
+    copy.Parent = original.Parent
+
+
+
+wait(0.1)
+
+
+game:GetService("Players").LocalPlayer.Character.Bone.Name = "Bone1"
+wait(0.2)
+game:GetService("Players").LocalPlayer.Character.Bone.Name = "Bone2"
+wait(0.2)
+game:GetService("Players").LocalPlayer.Character.Bone.Name = "Bone3"
+game:GetService("Players").LocalPlayer.Character.Bone2.Transparency = 0
+game:GetService("Players").LocalPlayer.Character.Bone2.Mesh.Offset = Vector3.new (-2,6,-1)
+game:GetService("Players").LocalPlayer.Character.Bone2.Bone.Part0 = game.Players.LocalPlayer.Character.HumanoidRootPart
+game:GetService("Players").LocalPlayer.Character.Bone1.Color = Color3.fromRGB(164,12,158)
+game:GetService("Players").LocalPlayer.Character.Bone2.Color = Color3.fromRGB(164,12,158)
+game:GetService("Players").LocalPlayer.Character.Bone3.Color = Color3.fromRGB(164,12,158)
+game:GetService("Players").LocalPlayer.Character.Bone.Color = Color3.fromRGB(164,12,158)
+game:GetService("Players").LocalPlayer.Character.Bone3.Transparency = 0
+wait(0.2)
+game:GetService("Players").LocalPlayer.Character.Bone3.Transparency = 0
+game:GetService("Players").LocalPlayer.Character.Bone3.Mesh.Offset = Vector3.new (-3,-6,-2)
+game:GetService("Players").LocalPlayer.Character.Bone3.Bone.Part0 = game.Players.LocalPlayer.Character.HumanoidRootPart
+
+game:GetService("Players").LocalPlayer.Character.Bone1.Name = "Bone"
+	local mouse = game.Players.LocalPlayer:GetMouse()
+			mouse.KeyDown:Connect(function(k) 
+				if k == "z" then 
+				    game:GetService("Players").LocalPlayer.Character.Bone.Color = Color3.fromRGB(0,0,255)
+			AnimationId = "4800254068"
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://"..AnimationId
+local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+k:AdjustSpeed(1)
+local A_1 = getrenv()._G.Pass
+        local A_2 = game:service("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value
+        local A_3 = {
+            ["HitTime"] = 0.8,
+            ["Type"] = "Normal",
+            ["HitEffect"] = "BoneHitEffect",
+            ["VictimCFrame"] = CFrame.new(Vector3.new(0,0,0)),
+            ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Knockback2,
+            ["Velocity"] = Vector3.new(0, 3, 0),
+            ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Knockback,
+            ["Damage"] = 10
+        }
+        local Event = game:GetService("ReplicatedStorage").Remotes.Damage
+        Event:InvokeServer(A_1, A_2, A_3)
+        game:GetService("Players").LocalPlayer.Character.Bone.Color = Color3.fromRGB(164,12,158)
+end
+end)
